@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>marker-api</Name>
+  <Repository>wirawan/marker-api</Repository>
+  <Registry>https://hub.docker.com/r/wirawan/marker-api</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Project></Project>
+  <Overview>Marker API container</Overview>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon></Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  
+  <Config Name="WebUI Port" Target="8080" Default="8080" Mode="tcp" Description="Web interface port" Type="Port" Display="always" Required="true" Mask="false"/>
+  
+  <Config Name="Environment Variables" Target=".env" Default="" Mode="ro" Description="Path to environment file" Type="Path" Display="always" Required="true" Mask="false"/>
+</Config>
+</Container>
